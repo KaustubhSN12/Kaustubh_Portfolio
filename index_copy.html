@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaustubh Narayankar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script>
+  function openModal(img) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+<script>
+  function showTab(tab) {
+    const projBtn = document.getElementById("projTab");
+    const certBtn = document.getElementById("certTab");
+    const knowBtn = document.getElementById("knowTab");    /* new added by kaustubh */
+
+    const projTab = document.getElementById("projectsTab");
+    const certTab = document.getElementById("certificatesTab");
+    const knowTab = document.getElementById("knowledgeHub");       /* new added by kaustubh */
+
+
+if (tab === 'projects') {
+  projBtn.classList.add('active');
+  certBtn.classList.remove('active');
+  knowBtn.classList.remove('active');
+
+  projTab.style.display = 'block';
+  certTab.style.display = 'none';
+  knowTab.style.display = 'none';
+
+} else if (tab === 'certificates') {
+  certBtn.classList.add('active');
+  projBtn.classList.remove('active');
+  knowBtn.classList.remove('active');
+
+  certTab.style.display = 'block';
+  projTab.style.display = 'none';
+  knowTab.style.display = 'none';
+
+} else if (tab === 'Knowledge Hub') {
+  knowBtn.classList.add('active');
+  projBtn.classList.remove('active');
+  certBtn.classList.remove('active');
+
+  knowTab.style.display = 'block';
+  projTab.style.display = 'none';
+  certTab.style.display = 'none';
+}
+
+}
+
+  function openModal(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+
+
+
+
+</script>
+
+<body>
+<header class="navbar">
+  
+  <div class="nav-container">
+    <div class="logo"><a href="#home">Kaustubh Narayankar</a></div>
+
+    <!-- Hamburger Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">My Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+  <div class="container hero-flex">
+    
+    <div class="hero-left">
+      <img src="Images/Profile photo.jpeg" alt="Kaustubh Narayankar" class="profile-pic" />
+    </div>
+
+    <div class="hero-right">
+      <h1>Hello, It's <span>Kaustubh </span></h1>
+      <h2>I'm a <span class="typing"></span></h2>
+
+      <div class="hero-card">
+  <p>
+    Turning data into decisions with Python, ML, and a curious mind.👨‍💻
+  </p>
+  <div class="hero-actions">
+    <a href="Images\kaustubh Narayankar_Data Science_resume_1.pdf" class="btn-ghost">Download CV</a>
+
+    <div class="hero-icons">
+      <a href="https://github.com/KaustubhSN12" target="_blank" class="icon-circle">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kaustubh-narayankar-6651a9249/" target="_blank" class="icon-circle">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" target="_blank" class="icon-circle">
+        <i class="fab fa-hackerrank"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+   
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="research-text">I’m a passionate Data Science professional with a strong academic foundation in machine learning, deep learning, analytics, and data visualization. 
+        My journey so far includes applying these skills to diverse real-world challenges—ranging from legal AI research to healthcare analytics, accident detection systems,
+         and predictive modeling projects like FIFA match outcomes. I have hands-on experience with Python, R, SQL, Power BI, Tableau, and advanced statistical methods,
+          alongside working knowledge of web and Android development.
+<br><br>
+Beyond the technical side, I bring strong problem-solving skills, attention to detail, and the ability to turn raw, messy datasets into actionable insights. 
+Whether it’s designing an ML model, building an interactive dashboard, or collaborating in cross-functional teams, I thrive on creating solutions that are practical, impactful,
+ and easy to understand. I’m eager to grow in environments where data drives meaningful decisions and innovation is a constant goal.</p>
+    
+</div>
+</style>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>MSc in Data Science </h3>
+          <p>S.I.E.S College of Arts, Science and Commerce (Sion, Mumbai)<br>2024 – 2026</p>
+        </div>
+        <div class="card">
+          <h3>BSc in Information Technology</h3>
+          <p> S K Somaiya College of Science, Commerce & Arts  <br> (Vidyavihar, Mumbai)<br>2020 – 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="projects">
+  <div class="container">
+    <h2>My Work</h2>
+
+    <div class="project-tabs">
+      <button id="projTab" class="tab-btn active" onclick="showTab('projects')">Projects</button>
+      <button id="certTab" class="tab-btn" onclick="showTab('certificates')">Certificates</button>
+      <button id="knowTab" class="tab-btn" onclick="showTab('Knowledge Hub')">Knowledge Hub</button>
+
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="tab-content" id="projectsTab">
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="Images/Projects/FIFA Worldcup.jpeg" alt="FIFA World Cup 2022 Prediction System" />
+          <div class="project-info">
+            <h3>FIFA World Cup 2022 Prediction System</h3>
+            <p class="research-text-pro">An intelligent match outcome predictor for the FIFA World Cup 2022 using machine learning. This project analyzes historical team performance data,
+               FIFA rankings, and key match statistics to forecast tournament results.
+                By training and tuning models using Random Forest, XGBoost,it simulates match outcomes and predicts winners through each stage of the competition.</p>
+            <a href="https://github.com/KaustubhSN12/Fifa-worldcup-Qatar-2022-prediction-system-.git" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Images/Projects/Cognifyz.jpeg" alt="Data-Analysis_Restaurant_Cuisines" />
+          <div class="project-info">
+            <h3>Data-Analysis_Restaurant_Cuisines</h3>
+            <p class="research-text-pro">I've successfully completed several tasks, including data cleaning, exploratory data analysis to uncover valuable insights from datasets. 💡💻 Thrilled to contribute to impactful</p>
+            <a href="https://github.com/KaustubhSN12/Data-Analysis_Internship_cognifyz.git" target="_blank">View Project</a>
+          </div>
+        </div>
+
+ <div class="project-card">
+          <img src="Images/Projects/Life.png" alt="Data Analysis - life expectancy" />
+          <div class="project-info">
+            <h3>Data Analysis - life expectancy</h3>
+            <p class="research-text-pro">Analyzed Global Population Life expectancy</p>
+            <a href="https://github.com/KaustubhSN12/PRODIGY_DS_01.git" target="_blank">View Project</a>
+          </div>
+        </div>
+
+ <div class="project-card">
+          <img src="Images/Projects/titanic.jpeg" alt="Data Analysis - EDA on Titanic" />
+          <div class="project-info">
+            <h3>Data Analysis - EDA on Titanic</h3>
+            <p class="research-text-pro">Performed and Analyzed Passenger Class, Survival Rate and finding Trands and Interesting patterns of Titanic Passengers.</p>
+            <a href="https://github.com/KaustubhSN12/PRODIGY_DS_02.git" target="_blank">View Project</a>
+          </div>
+        </div>
+
+ <div class="project-card">
+          <img src="Images/Projects/sentiment.jpeg" alt="Sentiment Pattern Analysis" />
+          <div class="project-info">
+            <h3>Sentiment Pattern Analysis</h3>
+            <p class="research-text-pro">Analyzed and visualize sentiment patterns in social media data to understand public opinion and attitudes towards specific topics or brands.</p>
+            <a href="https://github.com/KaustubhSN12/PRODIGY_DS_04.git" target="_blank">View Project</a>
+          </div>
+        </div>
+
+ <div class="project-card">
+          <img src="Images/Projects/road.jpeg" alt="Road Traffic Analysis" />
+          <div class="project-info">
+            <h3>Road Traffic Analysis - EDA</h3>
+            <p class="research-text-pro"> Analyzed traffic accident data to identify patterns related to road conditions, weather, and time of day. Visualized accident hotspots and contributing factors.</p>
+            <a href="https://github.com/KaustubhSN12/PRODIGY_DS_05.git" target="_blank">View Project</a>
+          </div>
+        </div>        
+
+
+ <div class="project-card">
+          <img src="Images/Projects/PWC.jpeg" alt="Power BI" />
+          <div class="project-info">
+            <h3>Power Bi - PhoneNow customer churn</h3>
+            <p class="research-text-pro">The analysis done aimed to identify key factors driving churn and propose actionable recommendations to enhance customer retention.</p>
+            <a href="https://github.com/KaustubhSN12/PwC_Power-BI-Job-Simulation_repo.git" target="_blank">View Project</a>
+          </div>
+        </div>
+        
+<div class="project-card">
+          <img src="Images/Projects/Workplace.png" alt="WorkPlace Trend Analysis" />
+          <div class="project-info">
+            <h3>Power BI - WorkPlace Trend Analysis</h3>
+            <p class="research-text-pro"> This dashboard helps Analysis today's rapidly evolving workplace, understanding how gender, family dynamics, and career choices influence financial outcomes is essential.</p>
+            <a href="https://github.com/KaustubhSN12/Power-BI_salary-gender-family-trends.git" target="_blank">View Project</a>
+          </div>
+        </div>         
+
+<div class="project-card">
+          <img src="Images/Projects/Factory.png" alt="Factory Type" />
+          <div class="project-info">
+            <h3>Tableau - Daikibo Analytics</h3>
+            <p class="research-text-pro"> Tableau dashboards for machine downtime analysis and Excel-based gender pay equality classification.</p>
+            <a href="https://github.com/KaustubhSN12/Deloitte-Australia-Data-Analytics-Job-Simulation-on-Forage.git" target="_blank">View Project</a>
+          </div>
+        </div>         
+
+
+      </div>
+    </div>
+
+    <!-- Certificates Grid -->
+    <div class="tab-content" id="certificatesTab" style="display:none;">
+      <div class="certificates-grid">
+        <img src="Images/Certificates/Certificate 10.jpg" alt="Certificate 10" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 9.png" alt="Certificate 9" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 8.png" alt="Certificate 8" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 7.png" alt="Certificate 7" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 6.jpg" alt="Certificate 6" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 5.jpeg" alt="Certificate 5" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 4.jpeg" alt="Certificate 16" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 3.png" alt="Certificate 15" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 2.jpg" alt="Certificate 14" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 1.jpg" alt="Certificate 13" onclick="openModal(this)">
+	<img src="Images/Certificates/Certificate 11.jpg" alt="Certificate 12" onclick="openModal(this)">
+<!--	<img src="Images/cer11.jpg" alt="Certificate 11" onclick="openModal(this)">
+	<img src="Images/cer10.jpg" alt="Certificate 10" onclick="openModal(this)">
+	<img src="Images/cer9.jpg" alt="Certificate 9" onclick="openModal(this)">
+	<img src="Images/cer8.jpg" alt="Certificate 8" onclick="openModal(this)">
+	<img src="Images/cer7.jpg" alt="Certificate 7" onclick="openModal(this)">
+	<img src="Images/cer6.jpg" alt="Certificate 6" onclick="openModal(this)">
+	<img src="Images/cer5.jpg" alt="Certificate 5" onclick="openModal(this)">
+	<img src="Images/cer4.jpg" alt="Certificate 4" onclick="openModal(this)">
+	<img src="Images/cer3.png" alt="Certificate 3" onclick="openModal(this)">
+	<img src="Images/cer2.png" alt="Certificate 2" onclick="openModal(this)">
+	<img src="Images/cer1.png" alt="Certificate 1" onclick="openModal(this)"> -->
+
+      </div>
+    </div>
+
+    <!-- Knowledge Hub -->
+    <div class="tab-content" id="knowledgeHub">
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="Images/Projects/SQL.jpg" alt="FIFA World Cup 2022 Prediction System" />
+          <div class="project-info">
+            <h3>Top 20 SQL Interview Questions and Answers</h3>
+            <p class="research-text-pro">Welcome to the Top 20 SQL Interview Questions repository! This resource is designed to help you ace SQL interviews by covering essential concepts with detailed explanations and answers.</p>
+            <a href="https://github.com/KaustubhSN12/Top-20-SQL-Questions-for-Interviews.git" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Images/Projects/AI.jpeg" alt="AI Websites" />
+          <div class="project-info">
+            <h3>Ai Websites</h3>
+            <p class="research-text-pro"> curated collection of AI-based websites designed to make your life easier and your work more efficient. Whether you’re a developer, a data scientist, or just someone curious about the potential of AI, 
+              you’ll find tools here that can revolutionize the way you work.</p>
+            <a href="https://github.com/KaustubhSN12/Ai_Websites_Repository.git" target="_blank">View Project</a>
+          </div>
+        </div>   
+
+
+        </div>
+        </div>
+
+    <!-- Modal for Full-Screen Certificate -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <img class="modal-content" id="modalImage" />
+    </div>
+  </div>
+</section>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</section>
+
+
+
+<!-- EXPERIENCE 1-->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="cards">
+        <div class="card">
+          <h3> Lead - Placement Cell Data Science</h3>
+          <p> Data Science Department - SIES College of Arts, Science and Commerce.(Sion) <br>1st July 2025 - Present</p>
+          <p class="research-text-pro" > <b>Lead the Placement Cell for the Data Science department at SIES College</b>, managing the complete placement process from company outreach to final selections.
+             Coordinated with recruiters, faculty, and students to organize placement drives, pre-placement talks, and workshops.
+              Guided peers in resume building, interview preparation, and networking, while fostering strong relationships with industry partners to enhance placement opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- EXPERIENCE 2 -->
+
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h3> Data Science intern</h3>
+          <p> Prodigy InfoTech <br>1th March 2024 – 31th March 2024</p>
+          <p class="research-text-pro"> As a Data Science Intern at Prodigy InfoTech, conducted EDA on 100K+ row datasets, boosting decision accuracy by 15%. 
+Optimized data processing by 30% through cleaning and transformation, and developed 20+ visualizations using Matplotlib and Seaborn.
+Improved model accuracy by 12% via feature engineering, applied statistical methods to key business strategies, and analyzed real-time data to identify 10% market growth potential.
+</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="cards">
+
+      <div class="card soft-pink">
+        <h3>Programming <br>Languages</h3>
+        <p>Python, R, SQL, DAX</p>
+      </div>
+
+      <div class="card soft-pink">
+        <h3>Data Analysis & Visualization</h3>
+        <p>Pandas, NumPy, Matplotlib, Seaborn, Power BI, Tableau</p>
+      </div>
+
+<div class="card soft-pink">
+  <h3>Database <br>Management</h3>
+  <p>SQL, MySQL, Oracle</p>
+</div>
+
+
+     <div class="card soft-pink">
+  <h3>Machine & <br>Deep Learning</h3>
+  <p>Scikit-learn, TensorFlow, CNN, RNN, Classification, Regression, Clustering, Image Processing</p>
+</div>
+
+
+      <div class="card soft-pink">
+        <h3>Natural Language Processing (NLP)</h3>
+        <p>BERT, Transformers, LLMs, Summarization, NER, LangChain</p>
+      </div>
+
+<div class="card soft-pink">
+  <h3>Tools, Platforms <br>& IDEs</h3>
+  <p>
+    <strong>Tools & IDEs:</strong> Jupyter Notebook, Google Colab, Spyder IDE, Git, GitHub <br>
+    <strong>Platforms & Libraries:</strong> Hugging Face, Gradio, Flask, MongoDB, Canva
+  </p>
+</div>
+
+      <div class="card soft-pink">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JS, PHP</p>
+      </div>
+
+      <div class="card soft-pink">
+        <h3>Microsoft Office</h3>
+        <p>Excel, PowerPoint, MS-Word, Outlook, Teams</p>
+      </div>
+
+      <div class="card soft-pink">
+        <h3>Soft Skills</h3>
+        <p>Communication, Teamwork, presentation skills, Time management, Decision-making, Analytical thinking, Strategic thinking</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2 style="text-align: center; margin-bottom: 20px;">Contact Me</span></h2>
+  <div class="contact-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+
+    <div class="contact-icons" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 40px; justify-content: center;">
+  <a href="https://www.linkedin.com/in/kaustubh-narayankar-6651a9249/" target="_blank" class="contact-icon">
+    <i class="fab fa-linkedin"></i>
+    <span>LinkedIn</span>
+  </a>
+  <a href="mailto:k.narayankar3030@gmail.com" class="contact-icon">
+    <i class="fas fa-envelope"></i>
+    <span>Email</span>
+  </a>
+  <a href="tel:+919326324663" class="contact-icon">
+    <i class="fas fa-phone"></i>
+    <span>Call</span>
+  </a>
+  <a href="https://maps.google.com/?q=Tilak Nagar,+Mumbai,+India" target="_blank" class="contact-icon">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>Location</span>
+  </a>
+</div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Kaustubh Narayankar</p>
+  </footer>
+
+  <!-- Typing Script & Fullscreen Certificate Viewer -->
+  <script>
+    const words = ["Data Scientist", "ML Engineer", "Data Analyst","Business Analyst", "Power BI Dev", "Tech Explorer"];
+    let i = 0, j = 0, currentWord = "", isDeleting = false;
+    const type = () => {
+      const typingElement = document.querySelector(".typing");
+      if (!typingElement) return;
+      if (i === words.length) i = 0;
+      currentWord = words[i];
+      if (isDeleting) {
+        typingElement.textContent = currentWord.substring(0, j--);
+        if (j < 0) { isDeleting = false; i++; }
+      } else {
+        typingElement.textContent = currentWord.substring(0, j++);
+        if (j > currentWord.length) {
+          isDeleting = true;
+          setTimeout(type, 1000); return;
+        }
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    };
+    document.addEventListener("DOMContentLoaded", type);
+
+    function openFull(src) {
+      const fullscreen = document.createElement("div");
+      fullscreen.id = "fullscreen";
+      fullscreen.innerHTML = `<img src="${src}" alt="Certificate" />`;
+      fullscreen.style.cssText = `
+        position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.9); display: flex; justify-content: center;
+        align-items: center; z-index: 9999;`;
+      fullscreen.onclick = () => fullscreen.remove();
+      document.body.appendChild(fullscreen);
+    }
+  </script>
+</body>
+</html>
